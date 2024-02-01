@@ -95,7 +95,7 @@ body{
   box-shadow: 15px 0px 40px 0px #a3badf;
 }
 
-.product_item img {
+.swiper-slide img {
   
   width: calc(100% - 0px);
 
