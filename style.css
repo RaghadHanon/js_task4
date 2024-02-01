@@ -1,0 +1,234 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.poductCard:hover {
+
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  transform: scale(1.01);
+
+  transition: 0.7s;
+}
+
+.products{
+  display: flex;
+  justify-content: center;
+  /*background-image: linear-gradient(90deg, rgba(50, 212, 223, 0.66) 10%, rgba(117, 165, 237, 0.72) 82%);*/
+  background-image: linear-gradient(90deg, rgba(127, 246, 254, 0.66) 10%, rgba(190, 216, 255, 0.72) 82%);
+  padding: 100px;
+}
+.container{
+  width: calc(100% - 200px);
+
+  background-image: linear-gradient(270deg, rgba(50, 212, 223, 0.66) 10%, rgba(117, 165, 237, 0.72) 82%);
+
+
+  border-radius: 20px;
+
+  
+  backdrop-filter: pulr(50px);
+  background-color: #6ad2da62;
+  
+
+  box-shadow: 1px 5px 60px 0px #75a5ed;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 50px;
+
+  gap: 30px;
+
+}
+
+.poductCard{
+  width: calc((100% - 60px)/3);
+
+  
+  background-color: #ffffff;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  
+  box-shadow: 15px 0px 40px 0px #a3badf;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+
+  position: relative;
+  
+}
+.poductCard img {
+  width: 100%;
+  height: 250px;
+
+  border-radius: 10px;
+}
+.poductCard .detailes{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+
+  flex-grow: 1;
+  
+}
+
+
+.poductCard .detailes .prt{
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+
+
+}
+
+
+.poductCard .detailes h2{
+  font-size: 30px;
+  text-align: center;
+}
+.poductCard .detailes p{
+  padding: 10px;
+  flex-grow: 1;
+  font-size: 17px;
+
+}
+
+.poductCard .detailes  .prand{
+
+  padding: 5px 10px;
+
+  text-align: center;
+  gap: 20px 10px;
+
+
+}
+
+.poductCard .detailes  .learnMore{
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  border-top:1px solid rgb(184, 184, 184);
+  border-left:1px solid rgb(184, 184, 184);
+  border-bottom:1px solid rgb(184, 184, 184);
+  align-self: flex-end;
+
+  position: absolute;
+  right: 0;
+  top: 5%;
+}
+
+
+
+.poductCard .detailes .contain{
+
+  padding: 5px 5px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px 10px;
+
+  flex-grow: 1;
+  
+
+}
+
+.poductCard .detailes .prt svg{
+  width: 25px;
+  height: 25px;
+}
+
+
+
+.poductCard .detailes  span{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+@media screen and (max-width: 1050px) {
+  
+.products{
+  padding: 80px 20px;
+}
+
+.container{
+  width: calc(100% - 100px);
+  padding: 50px 40px;
+}
+}
+
+
+@media screen and (max-width: 800px) {
+  
+  .poductCard{
+
+    width: calc((100% - 20px)/2);
+  }
+  
+.container{
+  padding: 30px;
+  gap: 20px;
+}
+}
+
+@media screen and (max-width: 500px) {
+  
+  .poductCard{
+
+    width:100%;
+  }
+  
+.container{
+  
+  width: calc(100% - 80px);
+  padding: 30px;
+  gap: 40px;
+}
+.products{
+  padding: 60px 0px;
+}
+}
+
+
+@media screen and (max-width: 450px) {
+  
+  .poductCard{
+
+    width:100%;
+  }
+  
+.poductCard .detailes .contain{
+
+  gap: 10px 3px;
+}
+.container{
+  
+  width: calc(100% - 60px);
+  padding: 30px;
+  gap: 40px;
+}
+.products{
+  padding: 40px 0px;
+}
+}
